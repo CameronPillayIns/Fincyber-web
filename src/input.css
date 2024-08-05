@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.svg1{
+    position: absolute;
+    left:0;
+    text-align: center; 
+    
+}
+
+
+
+.curved h1{
+
+
+}
+
+.curved svg{
+    display: block;
+}
+
+.curved2{
+    display:block;
+
+}
+
+.curved2 h1{
+    margin-top:0;
+}
+.curved2 svg{
+    display: block;
+}
+
+.bg1{
+    background-image: url("/img/Home Page 1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.bg2{
+    background-image: url("/img/Home Page 2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.bg3{
+    
+    background-image: url('/img/Home Page Contact.png');
+    background-position: center;
+    opacity: 0.9;
+}
+
+.bgServices1{
+    
+    background-image: url('/img/About.png');
+    background-position: center;
+
+}
+
+.bgServices2{
+    
+    background-image: url('/img/Services/Services Contact .png');
+    background-position: top;
+
+}
+
+.bgTech1{
+    
+    background-image: url('/img/Technologies/Technologies Contact.png');
+    background-position: center;
+
+}
+
+.bgTech2{
+    
+    background-image: url('/img/Technologies/Technologies.png');
+    background-position: center;
+
+}
+
+
+
+
+.faq {
+	min-width: 800px;
+	max-width: 800px;
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #fff;
+	cursor: pointer;
+	&.active .answer {
+		max-height: 400px;
+		animation: fade 0.12s ease-in-out;
+	}
+	&.active svg {
+		transform: rotate(180deg);
+	}
+}
+.question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h3 {
+		font-size: 1rem;
+	}
+}
+.answer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1.4s;
+	p {
+		padding-top: 1rem;
+		line-height: 1.6;
+		font-size: 0.8rem;
+	}
+	li {
+		padding-top: 1rem;
+		line-height: 1.6;
+		font-size: 0.8rem;
+	}
+}
+.svg {
+	transition: transform 0.5s ease-in;
+}
+
+

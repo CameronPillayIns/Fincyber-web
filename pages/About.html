@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins] h-screen overflow-x-hidden">
+    <header class="bg-[#062d4c]">
+        <nav class="flex justify-between items-center w-[92%] p-4 mx-auto">
+            <div>
+
+                <a href="/"><img class=" w-28 md:w-36 cursor-pointer" src="../img/InspiritLogo-White.png"
+                        alt="inspirit logo"></a>
+            </div>
+            <div
+                class="nav-links duration-500 md:static bg-[#062d4c] absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-[#1f93c8] text-white" href="./About.html">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[#1f93c8] text-white" href="./Services.html">Services</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[#1f93c8] text-white" href="./Technology.html">Technologies</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[#1f93c8] text-white" href="./Articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[#1f93c8] text-white" href="./Faqs.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-[#1f93c8] text-white" href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class=" z-10  bg-[#074868] text-white  px-5 py-2 rounded-md hover:bg-[#87acec]"> <a
+                        href="./Login.html">Sign In</a></button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-white text-3xl cursor-pointer md:hidden">
+                </ion-icon>
+            </div>
+    </header>
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+
+
+    </div>
+
+    <!-- bg-[url('../img/bg.png')] -->
+
+    <div class=" bgServices1 bg-cover lg:overflow-x-hidden   w-[100%]   z-1 content-center   mx-auto text-left    ">
+
+        <div class=" max-w-[1000px] mx-auto mt-20 h-[100px]">
+
+
+            <h1 class="font-bold  text-5xl   text-white">About Us</h1>
+            <br />
+
+            <p class=" max-w-[600px] italic text-left text-md text-[#fff] ">Experts in the ICT industry <span class="text-[#1f93c9]">
+                    since 1999.</span> We create <span class="text-[#1f93c9] text-center">industry specific
+                    solutions</span> that are <span class="text-[#1f93c9]"> easily accessible</span> for small to medium
+                organisations and blue-chip companies.</p>
+
+            <br />
+
+        </div>
+        <div class="curved">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 219">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,192L80,192C160,192,320,192,480,176C640,160,800,128,960,106.7C1120,85,1280,75,1360,69.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+    </div>
+
+
+    <div class="max-w-[1000px] mx-auto py-10">
+        <div class="grid grid-cols-2 mb-5">
+            <div><img src="../img/Inspirit-Logo-High-Res-1024x410.png" class=" w-28 md:w-36 cursor-pointer" alt=""></div>
+            <div class="p-6"><p class="italic text-[#2bbcff] font-semibold text-right text-lg">Breathing new life into business</p></div>
+        </div>
+
+        <div >
+            <p class="mb-5">
+                At Inspirit we have years of experience within the ERP landscape driving integration, automation and optimization. We have a blend of OEM and custom developed solutions to enhance your business outputs to ultimately make your organisation more efficient and effective. Over the last decade we have harnessed the power of data driven solutions to provide our customers with analytical and tailored data solutions to meet their business needs. 
+            </p>
+            <p>
+                We are a South African based organisation with an EMEA (Europe, the Middle East and Africa) footprint and have partnered with some of Africa's largest ICT companies like SYSPRO, IOCO, MIE, and XDS giving us access to a broad range of solutions. data products and access to specialised resources to optimise your business. At the Inspirit group of companies, we create industry
+                specific solutions that are easily accessible for small to medium
+                organisations and blue-chip companies 
+            </p>
+        </div>
+    </div>
+
+    <div class=" p-10  mx-auto grid md:grid-cols-2 gap-8 mx">
+    
+        
+        <div class=" shadow-xl text-white bg-[#0b3b60] flex flex-col  my-4  hover:scale-105 duration-300">
+            <div class="bg-white rounded-b-xl h-[60px]  w-[200px] mx-auto mb-6">
+                <h2 class="text-xl   text-[#0b3b60] font-bold text-center  py-8">What we do</h2>
+
+            </div>
+          <div class="text-left content-center mx-auto w-[400px] text-sm mb-8">
+            <p class="py-2  mx-8 ">
+              Inspirit provides insights to companies and assists in unlocking their unknown potential or hidden opportunities by delivering top quality, business intelligence and analytic solutions under one umbrella.
+            </p>
+            <p class="py-2  mx-8 ">
+                The Inspirit group of companies prides ourselves on being change management agents and are passionate about " breathing new life into your business".
+            </p>
+          </div>
+          
+        </div>
+        <div class=" shadow-xl text-white bg-[#0b3b60] flex flex-col  my-4  hover:scale-105 duration-300">
+            <div class="bg-white rounded-b-xl h-[60px]  w-[400px] mx-auto text-center mb-8">
+                <h2 class="text-xl   text-[#0b3b60] font-bold   py-8 ">Poeple and Risk Applications</h2>
+
+            </div>
+          <div class="text-left content-center mx-auto w-[400px] text-sm  ">
+            <ul class="list-disc">
+                <li>
+                    Human Capital Management, encompassing- resource onboarding, employee vetting, criminal & educational checks
+                </li>
+                <li>
+                    Tracing Applications - debtor tracing, consumer and company verification KYC, Data Enrichment, Fraud Prevention
+                </li>
+                <li>
+                    FCS Applications - provide solutions that enables businesses to remain compliant with the Financial Sector Regualtion Act. 
+                </li>
+            </ul>
+          </div>
+          
+        </div>
+      
+    
+      </div>
+</body>
+
+</html>
