@@ -20,7 +20,7 @@
                 <a href="/"><img class=" w-28 md:w-36 cursor-pointer" src="../img/InspiritLogo-White.png"  alt="inspirit logo"></a>
              </div>
             <div
-                class="nav-links duration-500 md:static bg-[#062d4c] absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                class="nav-links duration-500 md:static bg-[#062d4c] absolute md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
                         <a class="hover:text-[#1f93c8] text-white"  href="./About.html">About</a>
@@ -66,7 +66,7 @@
     <div class=" max-w-[1000px] mx-auto mt-20 h-[100px]">
 
 
-        <h1 class="font-bold  text-5xl   text-white">Contact Us</h1>
+        <h1 class="font-bold text-center sm:text-left text-2xl sm:text-5xl   text-white">Contact Us</h1>
         <br />
 
        
@@ -104,37 +104,37 @@
           <button type="submit" class="w-full h-12 text-white text-base font-semibold leading-6 rounded-md transition-all duration-700 hover:bg-blue-800 bg-[#42aecc] shadow-sm">Send</button>
     </div> -->   
     
-    <div class=" p-8  shadow-lg   bg-[#0c3e65]  lg:p-11 lg:rounded-l-2xl rounded-l-2xl">
+    <div class=" p-8  shadow-lg   bg-[#0c3e65]  lg:p-11 sm:rounded-l-2xl sm:rounded-r-none rounded-t-2xl">
         <h2 class="text-[#42aecc] font-manrope text-2xl font-semibold leading-10 mb-11">Send Us A Message</h2>
         <form action="#" method="post" class=" m-8 ">
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
-                <input type="text" id="name" name="name" required class="w-[90%] h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="John Doe">
+                <input type="text" id="name" name="name" required class="w-[90%] h-12 text-gray-300 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="John Doe">
                 <span class="text-red-500 text-xs hidden" id="name-error">Name is required</span>
             </div>
             
             <div>
                 <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
-                <input type="email" id="email" name="email" required class="w-[90%] h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="john.doe@example.com">
+                <input type="email" id="email" name="email" required class="w-[90%] h-12 text-gray-300 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="john.doe@example.com">
                 <span class="text-red-500 text-xs hidden" id="email-error">Valid email is required</span>
             </div>
             
             <div>
                 <label for="number" class="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
-                <input type="tel" id="number" name="number" required pattern="[0-9]{10}" class="w-[90%] h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="0123456789">
+                <input type="tel" id="number" name="number" required pattern="[0-9]{10}" class="w-[90%] h-12 text-gray-300 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="0123456789">
                 <span class="text-red-500 text-xs hidden" id="number-error">Valid phone number is required</span>
             </div>
             
             <div>
                 <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                <textarea id="message" name="message" required class="w-[90%] h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" rows="4" placeholder="Your message here"></textarea>
+                <textarea id="message" name="message" required class="w-[90%] p-2 resize-none h-24 text-gray-300 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-lg border border-gray-200 focus:outline-none pl-4 mb-10" rows="4" placeholder="Your message here"></textarea>
                 <span class="text-red-500 text-xs hidden" id="message-error">Message is required</span>
             </div>
             
-            <div>
+            <div class="mb-4">
                 <label class="inline-flex items-center">
                     <input type="checkbox" id="terms" name="terms" required class="form-checkbox">
-                    <span class=" ml-2 text-sm text-gray-600">I agree to my data being collected and stored</a></span>
+                    <span class=" ml-4 text-sm text-gray-600">I agree to my data being collected and stored</a></span>
                 </label>
                 <span class="text-red-500 text-xs hidden" id="terms-error">You must agree to the terms</span>
             </div>
@@ -143,51 +143,48 @@
         </form>
     </div>
     <script>
-        // Basic validation script
+     
         document.querySelector('form').addEventListener('submit', function(e) {
             let isValid = true;
 
-            // Reset error messages
             document.querySelectorAll('.text-red-500').forEach(el => el.classList.add('hidden'));
 
-            // Validate name
             if (!document.getElementById('name').value) {
                 document.getElementById('name-error').classList.remove('hidden');
                 isValid = false;
             }
 
-            // Validate email
+            
             if (!document.getElementById('email').checkValidity()) {
                 document.getElementById('email-error').classList.remove('hidden');
                 isValid = false;
             }
 
-            // Validate phone number
+            
             if (!document.getElementById('number').checkValidity()) {
                 document.getElementById('number-error').classList.remove('hidden');
                 isValid = false;
             }
 
-            // Validate message
+            
             if (!document.getElementById('message').value) {
                 document.getElementById('message-error').classList.remove('hidden');
                 isValid = false;
             }
 
-            // Validate terms checkbox
             if (!document.getElementById('terms').checked) {
                 document.getElementById('terms-error').classList.remove('hidden');
                 isValid = false;
             }
 
             if (!isValid) {
-                e.preventDefault(); // Prevent form from submitting if not valid
+                e.preventDefault(); 
             }
         });
     </script>
           <div class="lg:mb-0 mb-10">
               <div class="group w-full h-full">
-                  <div class="relative h-full  bg-[#0c3e65] rounded-r-xl">
+                  <div class="relative h-full  bg-[#0c3e65] rounded-b-xl sm:rounded-l-none sm:rounded-r-xl">
                       <img src="../img/Technologies/contact.png" alt="ContactUs" class="w-full h-full lg:rounded-r-2xl opacity-40 bg-blend-overlay rounded-r-2xl "/>
                       <h1 class="font-manrope text-white text-2xl font-bold leading-10 absolute top-11 left-11">Reach out to us</h1>
                       <div class="absolute bottom-60 w-full lg:p-11 p-5">
@@ -222,50 +219,99 @@
          
     </div>
 
-    <script>
-        // Basic validation script
-        document.querySelector('form').addEventListener('submit', function(e) {
-            let isValid = true;
-
-            // Reset error messages
-            document.querySelectorAll('.text-red-500').forEach(el => el.classList.add('hidden'));
-
-            // Validate name
-            if (!document.getElementById('name').value) {
-                document.getElementById('name-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate email
-            if (!document.getElementById('email').checkValidity()) {
-                document.getElementById('email-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate phone number
-            if (!document.getElementById('number').checkValidity()) {
-                document.getElementById('number-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate message
-            if (!document.getElementById('message').value) {
-                document.getElementById('message-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate terms checkbox
-            if (!document.getElementById('terms').checked) {
-                document.getElementById('terms-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (!isValid) {
-                e.preventDefault(); // Prevent form from submitting if not valid
-            }
-        });
-    </script>
   </section>
-                                          
+  <footer class="bg-[#062d4c] p-10  text-white">
+
+    <div class="max-w-[100%] m-auto ">
+
+      <div class="grid grid-cols-3 sm:grid-cols-4  max-w-[1200px] gap-4 mx-auto mb-10 ">
+        <div class="">
+          <img src="/img/InspiritLogo-White.png" href="/" class="w-[200px]"></img>
+
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-gray-400 mb-3 text-md sm:text-lg">Menu</h4>
+          <ul>
+            <li><a href="About.html">About </a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Technology.html">Technology</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html">Sign In</a></li>
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-gray-400 mb-3 text-md sm:text-lg">Quick Links</h4>
+          <ul>
+            <li><a href="Faqs.html">FAQ's</a></li>
+            <li><a href="Terms.html">Terms & Conditions</a></li>
+            <li><a href="/PDF's/Inspirit_PAIA and POPIA manual_v1.1 (2).pdf">PAIA</a></li>
+            <li><a href="/PDF's/IDAS Cookie Policy PDF (1).pdf">Cookie Policy</a></li>
+            <li><a href="Articles.html">Articles</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-10">
+
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://inspirit.co.za/">Inspirit</a>
+          </h4>
+          <ul>
+
+            <li> Brandfin House, </li>
+            <li>4 Holwood Crescent,</li>
+            <li>La Lucia Ridge, </li>
+            <li>Umhlanga,</li>
+            <li> 4319</li>
+            <li>+27 31 584 7379</li>
+
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://www.mie.co.za/">MIE</a></h4>
+          <ul>
+            <li>Building 1,</li>
+            <li>Jean Park Chambers,</li>
+            <li>252 Jean Ave,</li>
+            <li>Lyttleton, Centurion,</li>
+            <li> 0157</li>
+            <li> +27 12 644 4000</li>
+            <li> </li>
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://www.xds.co.za/">XDS</a></h4>
+          <ul>
+            <li>Atrium on 5th,</li>
+            <li>Sandton City,</li>
+            <li>Sandton,</li>
+            <li>Johannesburg,</li>
+            <li> 2196</li>
+            <li> +27 11 645 9100</li>
+
+
+
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://www.eoh.co.za/">IOCO</a></h4>
+          <ul>
+            <li>1st Floor, Block E,</li>
+            <li> Pinmill Farm Office Park,</li>
+            <li>164 Katherine St,</li>
+            <li>Sandton,</li>
+            <li> 2148</li>
+            <li>+27 11 607 810</li>
+            <li> </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+  </footer>                     
 </body>
 </html>

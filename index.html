@@ -2,505 +2,547 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-     <link rel="stylesheet" href="src/input.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="src/input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
 <body class="font-[Poppins] h-screen overflow-x-hidden bg1 ">
-    <header class="bg-[#062d4c] ">
-        <nav class="flex  justify-between items-center w-[92%] p-4 mx-auto">
-            <div>
-                
-               <a href="/"><img class=" w-28 md:w-36 cursor-pointer" src="./img/InspiritLogo-White.png"  alt="inspirit logo"></a>
-            </div>
-            <div
-                class="nav-links duration-500 md:static bg-[#062d4c] absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                    <li>
-                        <a class="hover:text-[#1f93c8] text-white"  href="/pages/About.html">About</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-[#1f93c8] text-white" href="pages/Services.html">Services</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-[#1f93c8] text-white" href="pages/Technology.html">Technologies</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-[#1f93c8] text-white" href="pages/Articles.html">Articles</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-[#1f93c8] text-white" href="pages/Faqs.html">FAQs</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-[#1f93c8] text-white" href="pages/Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
-                <button class=" z-10  bg-[#074868] text-white  px-5 py-2 rounded-md hover:bg-[#87acec]"> <a href="pages/Login.html">Sign In</a></button>
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class= "text-white  text-3xl cursor-pointer md:hidden"></ion-icon>
-            </div>
-    </header>
+  <header class="bg-[#062d4c] ">
+    <nav class="flex  justify-between items-center w-[92%] p-4 mx-auto">
+      <div>
 
-
-
-    <script >
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e){
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle( 'top-0')
-        }
-    </script>
-
-
-<div class=" lg:overflow-x-hidden md:ml-36 min-h-[50vh] w-[100%]  z-1 content-center lg:p-30 p-10 mx-auto text-left mb-[3.875rem]  md:mb-20 lg:mb-[6.25rem] ">
-
-      <div class="justify-center  lg:grid sm:block grid-cols-2 gap-2">
-       <div>
-
-        <h1 class="font-bold  text-5xl   text-[#074868]">FIC: <span class="text-[#0c6895]">Digital Compliance</span></h1>
-        <br/>
-           <p class=" max-w-3xl mx-auto mb-6 text-n-2 :text-xl lg:mb-8">
-            Remain compliant and safeguard your business through <br/>extensive
-            business verifications
-           </p> 
-          
-          <br/>
-            <ul>
-<!--             class="mt-10 text-center md:text-left mx-auto sm:pl-20 justify-content-right w-[300px]  md:w-full  px-4 space-y-3 "
- -->           
-            <li>Real-time Background Checks</li>
-            <li>Pay Per Check</li>
-            <li>No Bundle Fees</li>
-          </ul>
-        
-        
-          
-         <a href="/" class="  mt-12 flex space-x-4 btn bg-[#42aecc] hover:bg-gray-400 rounded-md max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-[#42aecc]"
-         >GET A FREE DEMO</a>
-
-       </div> 
-
- <div class="hidden md:block">
-
-    <img
-    className="  lg:ml-28 mt-20 hidden lg:block"
-    src='./img/diagram.png'
-    alt="visual representation of Fincyber "
-    />
- </div>
-
-
-
-
-</div>
-<div class="curved">
-  
-       
-<svg class="svg1"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#062d4c" fill-opacity="1" d="M0,128L80,128C160,128,320,128,480,112C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-    
-</path>
-</svg>
-
-</div>
-</div> 
-
-<section class=" bg-[#062d4c] relative">
- 
-   
-        
- 
-    <div class=  " bg2 w-full text-sm mt-10  py-10 px-4">
-      <h1 class="text-center mb-10 text-3xl text-[#fff] font-bold">A <span class="text-[#1f93c9]"> singular hub</span> for managing <span class="text-[#1f93c9] text-center">all</span> compliance-related tasks</h1>
-     
-       
-    <div class="max-w-[1000px] mx-auto grid md:grid-cols-3 gap-8">
-    
-     
-      <div class="w-full shadow-xl text-white bg-[#0b3b60] flex flex-col p-2 my-4  hover:scale-125 duration-300 h-[270px]">
-        <div class="flex">
-          <img src="img/Due Diligence.gif" alt="" width="120">
-          <h2 class="text-xl font-bold text-center  py-10">Due Diligence</h2>
-  
-        </div>
-        <div class="text-left  h-[200px] md:h-[250px]  text-sm">
-
-          <p class=" mx-8 "> Real-time Identity Verification </p>
-          <p class="  mx-8">Bank Account Verification</p>
-          <p class="  mx-8">Debt Summary</p>
-          <p class="mx-8">RMCP Risk Rating</p>
-          <p class="  mx-8">Facial Recognition</p>
-        </div>
-        
+        <a href="/"><img class=" w-28 md:w-36 cursor-pointer" src="./img/InspiritLogo-White.png"
+            alt="inspirit logo"></a>
       </div>
-      <div class="w-full shadow-xl text-white bg-[#0b3b60] flex flex-col p-2  my-4  hover:scale-125 duration-300 h-[270px]">
-        <div class="flex">
-           <img src="img/KYC.gif" alt="" width="120">
-         
-        <h2 class="text-xl font-bold text-center py-8">
-        
-          KYC
-        </h2>
+      <div
+        class="nav-links duration-500 md:static bg-[#062d4c] absolute md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vh] gap-8">
+          <li>
+            <a class="hover:text-[#1f93c8] text-white" href="/pages/About.html">About</a>
+          </li>
+          <li>
+            <a class="hover:text-[#1f93c8] text-white" href="pages/Services.html">Services</a>
+          </li>
+          <li>
+            <a class="hover:text-[#1f93c8] text-white" href="pages/Technology.html">Technologies</a>
+          </li>
+          <li>
+            <a class="hover:text-[#1f93c8] text-white" href="pages/Articles.html">Articles</a>
+          </li>
+          <li>
+            <a class="hover:text-[#1f93c8] text-white" href="pages/Faqs.html">FAQs</a>
+          </li>
+          <li>
+            <a class="hover:text-[#1f93c8] text-white" href="pages/Contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-        <div class="text-left text-sm">
-          <p class="  mx-8 ">Sanctions</p>
-          <p class=" mx-8"> Anti-Money Laundering</p>
-          <p class="  mx-8">DPEP</p>
-          <p class="  mx-8"> FPEP </p>
-          <p class="  mx-8"> PIP </p>
-          <p class="  mx-8">TFS Screening</p>
-        </div>
-       
+      <div class="flex items-center gap-6">
+        <button class=" z-10  bg-[#074868] text-white  px-5 py-2 rounded-md hover:bg-[#87acec]"> <a
+            href="pages/Login.html">Sign In</a></button>
+        <ion-icon onclick="onToggleMenu(this)" name="menu"
+          class="text-white  text-3xl cursor-pointer md:hidden"></ion-icon>
       </div>
-      <div class="w-full text-white shadow-xl flex   bg-[#0b3b60] flex-col p-2 my-4  hover:scale-125 duration-300 h-[270px]">
-        <div class="flex">
+  </header>
 
-        <img src="img/KYE.gif" alt="" width="120">
-        <h2 class="text-xl font-bold text-center py-8">
-          Know Your Employee
-        </h2>
-        </div>
-        <div class="text-left text-sm ">
-          <p class="  mx-8 ">Reference Checks</p>
-          <p class=" mx-8">Credit Checks</p>
-          <p class="  mx-8">Criminal Checks</p>
-          <p class="  mx-8">Industry Membership Checks</p>
-          <p class="  mx-8">Compliance Screening</p>
-          <p class="  mx-8">Risk Assessment</p>
-        </div>
-       
-      </div>
-      <div></div>
-      <button >
-      <a href="/" class=' text-white mx-auto rounded-md mt-12 flex space-x-4 btn bg-[#42aecc] hover:bg-gray-400  max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-[#42aecc]'>Learn More</a>
-        
-      </button>
+
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e) {
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-0')
+    }
+  </script>
+
+
+  <div
+    class=" lg:overflow-x-hidden md:ml-36 min-h-[50vh] w-[100%]  z-1 content-center lg:p-30 p-10 mx-auto text-left   md:mb-20 lg:mb-[6.25rem] ">
+
+    <div class="justify-center  lg:grid sm:block grid-cols-2 gap-2">
+      <div>
+
+        <h1 class="font-bold text-2xl sm:text-5xl  text-[#074868]">FIC: <span class="text-[#0c6895]">Digital Compliance</span>
+        </h1>
+        <br />
+        <p class=" max-w-3xl mx-auto mb-6 text-n-2 :text-xl lg:mb-8">
+          Remain compliant and safeguard your business through <br />extensive
+          business verifications
+        </p>
+
+        <br />
+        <ul class="list-inside">
       
+          <li class="flex items-center">
+            <svg class="w-3.5 h-3.5 me-2 text-[#074868] dark:text-green-400 flex-shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+            </svg>
+            Real-time Background Checks
+          </li>
+          <li class="flex items-center">
+            <svg class="w-3.5 h-3.5 me-2 text-[#074868] dark:text-green-400 flex-shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+            </svg>
+            Pay Per Check
+          </li>
+          <li class="flex items-center">
+            <svg class="w-3.5 h-3.5 me-2 text-[#074868] dark:text-green-400 flex-shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+            </svg>
+            No Bundle Fees
+          </li>
+        </ul>
+
+
+
+        <a href="/"
+          class="  mt-12 flex space-x-4 btn bg-[#42aecc] hover:bg-gray-400 rounded-md max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-[#42aecc]">GET
+          A FREE DEMO</a>
+
+      </div>
+
+      <div class="hidden md:block">
+
+        <img className="  lg:ml-28 mt-20 hidden lg:block" src='./img/diagram.png'
+          alt="visual representation of Fincyber " />
+      </div>
+
+
+
+
     </div>
-  </div></section>
+    <div class="curved">
+
+
+      <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+        <path fill="#062d4c" fill-opacity="1"
+          d="M0,128L80,128C160,128,320,128,480,112C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+
+        </path>
+      </svg>
+
+    </div>
+  </div>
+
+  <section class=" bg-[#062d4c] relative ">
 
 
 
-        <section > 
-        <div class="  bg-[#062d4c] p-12">
-          <div class="text-center mb-8 mt-12 ">
-            <h2 class="text-4xl text-white font-bold">Key Features</h2>
-            <h3 class="text-xl text-white italic ">Software tailored for your business</h3>
+
+    <div class=" bg2 w-full text-sm   py-10 px-4">
+      <h1 class="text-center mb-10 lg:text-3xl md:text-2xl text-[#fff] font-bold">A <span class="text-[#1f93c9]"> singular hub</span>
+        for managing <span class="text-[#1f93c9] text-center">all</span> compliance-related tasks</h1>
+
+
+      <div class="max-w-[1000px] mx-auto grid md:grid-cols-3 gap-8">
+
+
+        <div
+          class="w-full shadow-xl text-white bg-[#0b3b60] flex flex-col p-2 my-4  hover:scale-125 duration-300 h-[270px]">
+          <div class="flex">
+            <img src="img/Due Diligence.gif" alt="" class=" w-[120px] " >
+            <h2 class="lg:text-xl md:text-lg font-bold text-center  py-10">Due Diligence</h2>
+
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 mx-auto max-w-[1000px]">
-            
-            
-            
-            <div class="  p-6">
-              <div class="text-center">
-                <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/address verification.png" alt="">
-                </div>
-                <div class="text-md text-white  mb-2">Address Verification Service</div>
-              </div>
-            </div>
-            <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/anti money laundering.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Enhanced Anti-Money Laundering</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/KYC.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Know Your Customer</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/biometric.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Biometric Authentication</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/liveness.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Liveness Detection</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/onboarding.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Seamless Customer Onboarding</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/background checks.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Real-time Background Checks</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/ID verification.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">ID Verification</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/risk scoring.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Risk Scoring</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/due diligence.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Due Diligence</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/Sanctions lists.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Sanction Lists</div>
-                </div>
-              </div>
-              <div class="  p-6">
-                <div class="text-center">
-                  <div class=" w-16 h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
-                    <img src="/img/Key Features/optical character recognition.png" alt="">
-                  </div>
-                  <div class="text-md text-white  mb-2">Optical Character Recognition</div>
-                </div>
-              </div>
+          <div class="text-left  h-[200px] md:h-[250px]  lg:text-sm md:text-xs">
 
-            
+            <p class=" mx-8 "> Real-time Identity Verification </p>
+            <p class="  mx-8">Bank Account Verification</p>
+            <p class="  mx-8">Debt Summary</p>
+            <p class="mx-8">RMCP Risk Rating</p>
+            <p class="  mx-8">Facial Recognition</p>
           </div>
+
         </div>
-   
+        <div
+          class="w-full shadow-xl text-white bg-[#0b3b60] flex flex-col p-2  my-4  hover:scale-125 duration-300 h-[270px]">
+          <div class="flex">
+            <img src="img/KYC.gif" alt="" width="120">
+
+            <h2 class="lg:text-xl md:text-lg font-bold text-center py-8">
+
+              KYC
+            </h2>
+          </div>
+          <div class="text-left lg:text-sm md:text-xs">
+            <p class="  mx-8 ">Sanctions</p>
+            <p class=" mx-8"> Anti-Money Laundering</p>
+            <p class="  mx-8">DPEP</p>
+            <p class="  mx-8"> FPEP </p>
+            <p class="  mx-8"> PIP </p>
+            <p class="  mx-8">TFS Screening</p>
+          </div>
+
+        </div>
+        <div
+          class="w-full text-white shadow-xl flex   bg-[#0b3b60] flex-col p-2 my-4  hover:scale-125 duration-300 h-[270px]">
+          <div class="flex">
+
+            <img src="img/KYE.gif" alt="" width="120">
+            <h2 class="lg:text-xl md:text-lg font-bold text-center py-8">
+              Know Your Employee
+            </h2>
+          </div>
+          <div class="text-left lg:text-sm md:text-xs">
+            <p class="  mx-8 ">Reference Checks</p>
+            <p class=" mx-8">Credit Checks</p>
+            <p class="  mx-8">Criminal Checks</p>
+            <p class="  mx-8">Industry Membership Checks</p>
+            <p class="  mx-8">Compliance Screening</p>
+            <p class="  mx-8">Risk Assessment</p>
+          </div>
+
+        </div>
+        <div></div>
+        <button>
+          <a href="/"
+            class=' text-white mx-auto rounded-md lg:mt-4  flex space-x-4 btn bg-[#42aecc] hover:bg-gray-400  max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-[#42aecc]'>Learn
+            More</a>
+
+        </button>
+
+      </div>
+    </div>
   </section>
 
-  <section >
 
-    <div class="curved2 ">
- 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#062d4c" fill-opacity="1" d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,112C1120,117,1280,139,1360,149.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-    
+
+  <section>
+    <div class="  bg-[#062d4c] p-12">
+      <div class="text-center mb-8 mt-12 ">
+        <h2 class=" text-2xl sm:text-4xl text-white font-bold">Key Features</h2>
+        <h3 class="text-md sm:text-xl text-white italic ">Software tailored for your business</h3>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 mx-auto max-w-[1000px]">
+
+
+
+        <div class="  p-6">
+          <div class="text-center">
+            <div class=" w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/address verification.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Address Verification Service</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/anti money laundering.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Enhanced Anti-Money Laundering</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/KYC.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Know Your Customer</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/biometric.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Biometric Authentication</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/liveness.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Liveness Detection</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/onboarding.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Seamless Customer Onboarding</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/background checks.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Real-time Background Checks</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/ID verification.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">ID Verification</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/risk scoring.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Risk Scoring</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/due diligence.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Due Diligence</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class=" w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/Sanctions lists.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Sanction Lists</div>
+          </div>
+        </div>
+        <div class="  p-6">
+          <div class="text-center">
+            <div class="  w-10  sm:w-16 sm:h-16 flex justify-center items-center rounded-full mb-3 mx-auto">
+              <img src="/img/Key Features/optical character recognition.png" alt="">
+            </div>
+            <div class="text-sm sm:text-md text-white  mb-2">Optical Character Recognition</div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
-    
+
+  </section>
+
+  <section>
+
+    <div class=" curved2   ">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
+        <path fill="#062d4c" fill-opacity="1"
+          d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,112C1120,117,1280,139,1360,149.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+        </path>
+      </svg>
+
+    </div>
+
     <div class="h-12">
-      <h1 class="text-center text-2xl font-bold ">Powered by</h1>
-        <div class="grid grid-cols-4 mx-auto max-w-[800px] ">
-            <img class="" src="img/SYSPRO.png" alt="" width="150">
-            <img src="img/IOCO.png" alt="" width="150">
-            <img src="img/XDS.png" alt="" width="150">
-            <img src="img/MIE.png" alt="" width="150">
-        </div>
+      <h1 class="text-center md:text-xl lg:text-2xl font-bold ">Powered by</h1>
+      <div class="grid grid-cols-4 mx-auto sm:max-w-[600px] px-10  sm:mt-4 ">
+        <img src="img/SYSPRO.png" alt="" class=" w-[80px] sm:w-[150px]">
+        <img src="img/IOCO.png" alt="" class=" w-[80px] sm:w-[150px]">
+        <img src="img/XDS.png" alt="" class=" w-[80px] sm:w-[150px]">
+        <img src="img/MIE.png" alt="" class=" w-[80px] sm:w-[150px]">
+      </div>
     </div>
-<div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 190"><path fill="#062d4c" fill-opacity="1" d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,112C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-</div>
-</section>
-    
-<section class="bg-gradient-to-b from-[#062d4c] to-[#065379] h-96">
-    <h1 class="text-[#1e8ec2] text-center text-4xl font-bold mb-10">Accountable Institutions</h1>
-        <div class="grid grid-cols-3 gap-4 max-w-[700px] mx-auto">
-            <div class="bg-white rounded-b-lg h-[60px] ">
-                <h1 class="text-md font-semibold text-center my-4">Credit Providers</h1>
-            </div>
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4">Gambling Institutes</h1>
-            </div>
-
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4">Insurance Companies</h1>
-            </div>
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4">Estate Agents</h1>
-            </div>
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4"></h1>
-            </div>
-
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4">Motor Vehicle Dealers</h1>
-            </div>
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4">Financial Institutions</h1>
-            </div>
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4">Dealers in goods over R100k</h1>
-            </div>
-
-            <div class="bg-white rounded-b-lg h-[60px]">
-                <h1 class="text-md font-semibold text-center my-4">Certain Legal Practitioners</h1>
-            </div>
-            
-
-        </div>
-
-
-</section>
-
-
-
-
-<section >
-    <div class="bg-white p-4 h-[220px]">
-
-    <h1 class="text-center mt-3 mb-2 text-2xl py-4 font-bold">Industry leaders that rely on <span class="text-[#1f93c9]">Fincyber</span> </h1>
-     
-       <div class="grid grid-cols-6 max-w-[900px] mx-auto ">
-        <img  class=" h-[120px]" src="img/Home page Clients/Bidvest.png" alt="">
-        <img  class=" h-[120px]" src="img/Home page Clients/CCI.png" alt="">
-        <img  class=" h-[120px]" src="img/Home page Clients/Computershare.png" alt="">
-        <img class=" h-[120px]"  src="img/Home page Clients/Dezzi.png" alt="">
-        <img  class=" h-[120px]" src="img/Home page Clients/Heineken.png" alt="">
-        <img class=" mt-7 h-[60px]"  src="img/Home page Clients/lk-Logo-FinalHD.png" alt="">
-       
-       </div>    
+    <div class="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 189">
+        <path fill="#062d4c" fill-opacity="1"
+          d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,112C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+      </svg>
     </div>
-</section>
-    
-<section class=" p-5 h-[300px] bg3">
-    <h1 class="text-[#1f93c9] text-center  text-3xl py-10 font-bold">Remain compliant and safeguard your business </h1>
-    <h2 class="italic text-center text-lg text-white">Speak to one of our dedicated solutions specialists to request a demo</h2>
-    <a href="" class="mx-auto mt-10 rounded-md flex space-x-4 max-w-fit border px-5 py-2 text-sm font-medium shadow-sm bg-[#42aecc] hover:bg-gray-400 border-[#42aecc] text-white">Request a demo</a>
+  </section>
+
+  <section class="bg-gradient-to-b from-[#062d4c] to-[#065379] h-96 ">
+    <h1 class="text-[#1e8ec2] text-center lg:text-4xl md:text-xl font-bold mb-10">Accountable Institutions</h1>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4  sm:max-w-[600px] mx-auto px-8">
+      <div class="bg-white rounded-b-lg h-[60px] ">
+        <h1 class=" text-sm sm:text-md font-semibold text-center my-4">Credit Providers</h1>
+      </div>
+      <div class="bg-white rounded-b-lg h-[60px]">
+        <h1 class="text-sm sm:text-md font-semibold text-center my-4">Gambling Institutes</h1>
+      </div>
+
+      <div class="bg-white rounded-b-lg h-[60px]">
+        <h1 class="text-sm sm:text-md font-semibold text-center my-4">Insurance Companies</h1>
+      </div>
+      <div class="bg-white rounded-b-lg h-[60px]">
+        <h1 class="text-sm sm:text-md font-semibold text-center my-4">Estate Agents</h1>
+      </div>
 
 
-</section>
+      <div class="bg-white rounded-b-lg h-[60px]">
+        <h1 class="text-sm sm:text-md font-semibold text-center my-4">Motor Vehicle Dealers</h1>
+      </div>
+      <div class="bg-white rounded-b-lg h-[60px]">
+        <h1 class="text-sm sm:text-md font-semibold text-center my-4">Financial Institutions</h1>
+      </div>
+      <div class="bg-white rounded-b-lg h-[60px]">
+        <h1 class="text-sm sm:text-md font-semibold text-center my-4">Dealers in goods over R100k</h1>
+      </div>
+
+      <div class="bg-white rounded-b-lg h-[60px]">
+        <h1 class="text-sm font-semibold text-center my-4">Certain Legal Practitioners</h1>
+      </div>
+
+    </div>
+
+
+  </section>
 
 
 
-<div class="fixed  z-10 bottom-0 right-0 mr-[35px] mb-[35px]">
-    <a href="./pages/Contact.html" class="mx-auto rounded-full flex space-x-4 max-w-fit border px-5 py-2 text-sm font-medium shadow-sm bg-[#42aecc] hover:bg-gray-400 border-[#42aecc] ">Contact</a>
-</div>
 
-<footer class="bg-[#062d4c] p-10  text-white">
-    
+  <section>
+    <div class="bg-white p-4 h-[220px] ">
+
+      <h1 class="text-center mt-3 mb-2 lg:text-2xl md:text-xl py-4 font-bold">Industry leaders that rely on <span
+          class="text-[#1f93c9]">Fincyber</span> </h1>
+
+      <div class="grid grid-cols-6 max-w-[1200px] mx-auto ">
+        <img class=" w-[120px]" src="img/Home page Clients/Bidvest.png" alt="">
+        <img class=" w-[120px]" src="img/Home page Clients/CCI.png" alt="">
+        <img class=" w-[120px]" src="img/Home page Clients/Computershare.png" alt="">
+        <img class=" w-[120px]" src="img/Home page Clients/Dezzi.png" alt="">
+        <img class=" w-[120px]" src="img/Home page Clients/Heineken.png" alt="">
+        <img class="  w-[120px] " src="img\Home page Clients\lkcent.png" alt="">
+
+      </div>
+    </div>
+  </section>
+
+  <section class=" p-5 h-[300px] bg3">
+    <h1 class="text-[#1f93c9] text-center text-xl lg:text-3xl  py-10 font-bold">Remain compliant and safeguard your business </h1>
+    <h2 class="italic text-center text-md sm:text-lg text-white">Speak to one of our dedicated solutions specialists to request a
+      demo</h2>
+    <a href=""
+      class="mx-auto my-10 rounded-md flex space-x-4 max-w-fit border px-5 py-2 text-sm font-medium shadow-sm bg-[#42aecc] hover:bg-gray-400 border-[#42aecc] text-white">Request
+      a demo</a>
+
+
+  </section>
+
+
+
+  <div class="fixed  z-10 bottom-0 right-0 mr-[35px] mb-[35px]">
+    <a href="./pages/Contact.html"
+      class="mx-auto rounded-full flex space-x-4 max-w-fit border px-5 py-2 text-sm font-medium shadow-sm bg-[#42aecc] hover:bg-gray-400 border-[#42aecc] ">Contact</a>
+  </div>
+
+  <footer class="bg-[#062d4c] p-10  text-white">
+
     <div class="max-w-[100%] m-auto ">
-        
-        <div class="grid grid-cols-4 max-w-[1200px] gap-4 mx-auto mb-10 ">
-            <div class="">
-                <img src="img/InspiritLogo-White.png"  href="/" class="w-[200px]"></img>
-               
-            </div>
-            <div class="">
-                <h4 class="text-gray-400 mb-3">Menu</h4>
-                <ul>
-                    <li><a href="">About </a></li>
-                    <li><a href="pages/Services.html">Services</a></li>
-                    <li><a href="">Technology</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Sign In</a></li>
-                </ul>
-            </div>
-            <div class="">
-                <h4 class="text-gray-400 mb-3">Quick Links</h4>
-                <ul>
-                    <li><a href="">FAQ's</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">PAIA</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="">Articles</a></li>
 
-                </ul>
-            </div>
+      <div class="grid grid-cols-3 sm:grid-cols-4  max-w-[1200px] gap-4 mx-auto mb-10 ">
+        <div class="">
+          <img src="img/InspiritLogo-White.png" href="/" class="w-[200px]"></img>
 
         </div>
-        <hr>
-   
-            <div class="grid grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-10">
+        <div class="text-sm sm:text-md">
+          <h4 class="text-gray-400 mb-3 text-md sm:text-lg">Menu</h4>
+          <ul>
+            <li><a href="pages/About.html">About </a></li>
+            <li><a href="pages/Services.html">Services</a></li>
+            <li><a href="pages/Technology.html">Technology</a></li>
+            <li><a href="pages/Contact.html">Contact</a></li>
+            <li><a href="pages/Login.html">Sign In</a></li>
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-gray-400 mb-3 text-md sm:text-lg">Quick Links</h4>
+          <ul>
+            <li><a href="pages/Faqs.html">FAQ's</a></li>
+            <li><a href="pages/Terms.html">Terms & Conditions</a></li>
+            <li><a href="PDF's\Inspirit_PAIA and POPIA manual_v1.1 (2).pdf">PAIA</a></li>
+            <li><a href="PDF's\IDAS Cookie Policy PDF (1).pdf">Cookie Policy</a></li>
+            <li><a href="/pages/Articles.html">Articles</a></li>
 
-                <div class="">
-                    <h4 class="text-[#42aecc] mb-3"><a href="https://inspirit.co.za/">Inspirit</a>
-                    </h4>
-                    <ul>
+          </ul>
+        </div>
 
-                        <li> Brandfin House, </li>
-                        <li>4 Holwood Crescent,</li>
-                        <li>La Lucia Ridge, </li>
-                        <li>Umhlanga,</li>
-                        <li> 4319</li>
-                        <li>+27 31 584 7379</li>
-               
-                    </ul>
-                </div>
-                <div class="">
-                    <h4 class="text-[#42aecc] mb-3"><a href="https://www.mie.co.za/">MIE</a></h4>
-                    <ul>
-                        <li>Building 1,</li>
-                        <li>Jean Park Chambers,</li>
-                        <li>252 Jean Ave,</li>
-                        <li>Lyttleton, Centurion,</li>
-                        <li> 0157</li>
-                        <li> +27 12 644 4000</li>
-                        <li> </li>
-                    </ul>
-                </div>
-                <div class="">
-                    <h4 class="text-[#42aecc] mb-3"><a href="https://www.xds.co.za/">XDS</a></h4>
-                    <ul>
-                        <li>Atrium on 5th,</li>
-                        <li>Sandton City,</li>
-                        <li>Sandton,</li>
-                        <li>Johannesburg,</li>
-                        <li> 2196</li>
-                        <li> +27 11 645 9100</li>
-                        
+      </div>
+      <hr>
 
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-10">
 
-                    </ul>
-                </div>
-                <div class="">
-                    <h4 class="text-[#42aecc] mb-3"><a href="https://www.eoh.co.za/">IOCO</a></h4>
-                    <ul>
-                        <li>1st Floor, Block E,</li>
-                        <li> Pinmill Farm Office Park,</li>
-                        <li>164 Katherine St,</li>
-                        <li>Sandton,</li>
-                        <li> 2148</li>
-                        <li>+27 11 607 810</li>
-                        <li> </li>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://inspirit.co.za/">Inspirit</a>
+          </h4>
+          <ul>
 
-                    </ul>
-                </div>
-            </div>
+            <li> Brandfin House, </li>
+            <li>4 Holwood Crescent,</li>
+            <li>La Lucia Ridge, </li>
+            <li>Umhlanga,</li>
+            <li> 4319</li>
+            <li>+27 31 584 7379</li>
 
-
-
-
-
-
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://www.mie.co.za/">MIE</a></h4>
+          <ul>
+            <li>Building 1,</li>
+            <li>Jean Park Chambers,</li>
+            <li>252 Jean Ave,</li>
+            <li>Lyttleton, Centurion,</li>
+            <li> 0157</li>
+            <li> +27 12 644 4000</li>
+            <li> </li>
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://www.xds.co.za/">XDS</a></h4>
+          <ul>
+            <li>Atrium on 5th,</li>
+            <li>Sandton City,</li>
+            <li>Sandton,</li>
+            <li>Johannesburg,</li>
+            <li> 2196</li>
+            <li> +27 11 645 9100</li>
 
 
 
+          </ul>
+        </div>
+        <div class="text-sm sm:text-md">
+          <h4 class="text-[#42aecc] mb-3 text-md sm:text-lg"><a href="https://www.eoh.co.za/">IOCO</a></h4>
+          <ul>
+            <li>1st Floor, Block E,</li>
+            <li> Pinmill Farm Office Park,</li>
+            <li>164 Katherine St,</li>
+            <li>Sandton,</li>
+            <li> 2148</li>
+            <li>+27 11 607 810</li>
+            <li> </li>
+
+          </ul>
+        </div>
+      </div>
 
 
-</footer>
+
+
+
+
+
+
+
+
+
+  </footer>
 </body>
 
 </html>

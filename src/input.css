@@ -46,6 +46,13 @@
     
 }
 
+.bg4{
+    background-image: url("/img/Home Page 2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top, top right;
+}
+
 .bg3{
     
     background-image: url('/img/Home Page Contact.png');
